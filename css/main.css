@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #16a00c;
+}
+
+.logo {
+  font-family: "Press Start 2P", monospace;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: #333;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+header .nav {
+  list-style: none;
+}
+
+header .nav li {
+  padding: 10px 15px;
+}
+
+header .nav li a {
+  color: #fff;
+}
+
+header .nav li a:hover {
+  color: #16a00c;
+}
+
+.login-main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-main .logo-img {
+  width: 150px;
+  margin-left: -25px;
+}
+
+.login-main .logo-wrapper {
+  margin-bottom: 30px;
+}
+
+.login-section {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  color: #fff;
+}
+
+.login-section .login-form .form-group {
+  font-size: 1rem;
+}
+
+.login-section .login-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-section .login-form .form-group input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #424242;
+  border: none;
+  border-radius: 5px;
+  color: #16a00c;
+  font-family: monospace, monospace;
+  font-size: 1rem;
+}
+
+.login-section .login-form .form-group .remember-user input,
+.login-section .login-form .form-group .remember-user label {
+  display: inline-block;
+  width: auto;
+  font-size: 1rem;
+}
+
+.login-section .login-form .form-group button {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1rem;
+  background: none;
+  font-family: monospace, monospace;
+  color: #fff;
+  border: 1px solid #16a00c;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-section .login-form .form-group button:hover {
+  background-color: #16a00c5d;
+}
+
+.login-section .help-password {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-columns {
+  margin: 50px 0;
+}
+
+.footer-columns .footer-col {
+  margin: 20px 0;
+}
+
+.footer-columns .footer-col .footer-tittle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-columns .footer-col .about-text {
+  margin-bottom: 5px;
+}
+
+.footer-columns .footer-col i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 948px) {
+  .container {
+    width: 80%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+  }
+  header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login-main .logo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-section .container .login-form {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 500px;
+  }
+  .footer-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-columns .footer-col {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

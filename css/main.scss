@@ -1,0 +1,213 @@
+$main-color: #16a00c;
+$main-color-hover: #16a00c5d;
+$dark-color: #333;
+$dark-color-lighter: rgb(66, 66, 66);
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+$logo-font: "Press Start 2P";
+$body-font: monospace, monospace;
+
+// Global
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $body-font;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+.logo {
+  font-family: $logo-font, monospace;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+// Nav
+header {
+  background-color: $dark-color;
+
+  h1 {
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .nav {
+    list-style: none;
+
+    li {
+      padding: 10px 15px;
+
+      a {
+        color: #fff;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+// Main
+.login-main {
+  height: 100vh;
+  display: flex;
+
+  .logo-img {
+    width: 150px;
+    margin-left: -25px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+// Login Section
+.login-section {
+  padding: 80px 0;
+  display: flex;
+  background-color: $dark-color;
+  color: #fff;
+
+  .login-form {
+    .form-group {
+      font-size: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: $dark-color-lighter;
+        border: none;
+        border-radius: 5px;
+        color: $main-color;
+        font-family: $body-font;
+        font-size: 1rem;
+      }
+
+      .remember-user {
+        input,
+        label {
+          display: inline-block;
+          width: auto;
+          font-size: 1rem;
+        }
+      }
+
+      button {
+        margin: 10px 0;
+        padding: 10px 0;
+        width: 100%;
+        font-size: 1rem;
+        background: none;
+        font-family: $body-font;
+        color: #fff;
+        border: 1px solid $main-color;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+          background-color: $main-color-hover;
+        }
+      }
+    }
+  }
+
+  .help-password {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+// Footer
+.footer-columns {
+  margin: 50px 0;
+
+  .footer-col {
+    margin: 20px 0;
+
+    .footer-tittle {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .about-text {
+      margin-bottom: 5px;
+    }
+
+    i {
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+.copyright {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 948px) {
+  .container {
+    width: 80%;
+  }
+
+  // Header
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    .nav {
+      display: flex;
+    }
+  }
+
+  // Main
+  .login-main {
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // Login Section
+  .login-section {
+    .container {
+      display: flex;
+      flex-direction: column;
+      .login-form {
+        align-self: center;
+        width: 500px;
+      }
+    }
+  }
+
+  // Footer
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-col {
+      text-align: center;
+      flex: 1;
+    }
+  }
+}
